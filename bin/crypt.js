@@ -8,15 +8,21 @@ if (process.argv[2]) {
 
 	switch(process.argv[2]) {
 		case '-e': mode = 'encrypt'
-				   break
+					handler.handleRequest(mode)
+					break
 		case '-d': mode = 'decrypt'
-				   break
+					handler.handleRequest(mode)
+					break
+		case '-l': mode = 'list'
+					handler.handleListRequest()
+					break
+		case '-D': mode = 'delete'
+					handler.handleDeleteRequest()
+					break
 		default: console.log('Unidentified options')
-				 return
-	}
-
-	handler.handleRequest(mode)
+					break
+	}	
 
 } else {
-	return 
+	console.log('No operation option found') 
 }
