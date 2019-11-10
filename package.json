@@ -1,0 +1,16 @@
+{
+  "name": "crypt",
+  "version": "1.0.0",
+  "description": "Commaon line password manager",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "crypt": "./bin/crypt.js"
+  },
+  "preferGlobal": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
